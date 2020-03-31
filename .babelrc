@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+      //   "modules": false,
+        "useBuiltIns": "usage",
+      //   "targets": {},
+        "corejs": 3
+      }
+    ],
+    // "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+    "plugins": [[
+          "@babel/plugin-transform-runtime", {
+              "corejs": 3
+              // "helpers": true, // 默认，可以不写
+              // "regenerator": true,
+              // "useESModules": true
+          }]
+      ]
+}
