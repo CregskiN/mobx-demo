@@ -4,13 +4,10 @@ module.exports = {
     mode: 'development',
 
     entry: {
-        index: path.resolve(__dirname, 'src/index.ts')
+        index: path.resolve(__dirname, 'src/index.tsx')
     },
 
     devtool: 'inline-source-map',
-
-
-
 
     output: {
         path: path.resolve(__dirname, './build'),
@@ -19,7 +16,7 @@ module.exports = {
 
     module: {
         rules: [{
-            test: /\.ts?$/,
+            test: /\.tsx?$/,
             exclude: /node_modules/,
             use: [{
                 loader: 'babel-loader'
